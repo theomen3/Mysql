@@ -1,14 +1,18 @@
-CREATE TABLE `Customer` (
+DROP TABLE IF EXISTS `customer`;
+DROP TABLE IF EXISTS `interest`;
+DROP TABLE IF EXISTS `timeslots`;
+
+CREATE TABLE `Customer`	(
   CustomerID    INT(10) NOT NULL PRIMARY KEY,
   FirstName     VARCHAR(255) NOT NULL,
   LastName      VARCHAR(255) NOT NULL,
-  Sex           VARCHAR(6) NOT NULL,
+  Sex			VARCHAR(6) NOT NULL,
   BirthDate     DATE,
   PreferredSex  VARCHAR(10) NOT NULL)
 ;
 
 
-CREATE TABLE `Interest` (
+CREATE TABLE `Interest`	(
   CustomerID  INT(10),
   Interest    VARCHAR(10),
 
@@ -20,7 +24,7 @@ CREATE TABLE `Interest` (
     REFERENCES Customer (`CustomerID`))
 ;
 
-CREATE TABLE `Timeslots`  (
+CREATE TABLE `Timeslot`	(
   CustomerID  INT(10),
   Timeslot   VARCHAR(20),
 
@@ -30,6 +34,4 @@ CREATE TABLE `Timeslots`  (
   CONSTRAINT
     FOREIGN KEY TimeslotFK (`CustomerID`)
     REFERENCES Customer (`CustomerID`))
- ;
-
-
+;
