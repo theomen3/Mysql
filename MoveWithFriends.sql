@@ -28,3 +28,5 @@ CREATE TABLE `Timeslots`
   CONSTRAINT
     FOREIGN KEY TimeslotFK ('CustomerID')
     REFERENCES Customer ('CustomerID');
+
+/* hoi meiden */
