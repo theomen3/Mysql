@@ -6,7 +6,6 @@ CREATE TABLE `Customer`
   BirthDate     DATE,
   PreferredSex  VARCHAR(10) NOT NULL;
 
-
 CREATE TABLE `Interest`
   CustomerID  INT(10),
   Interest    VARCHAR(10),
