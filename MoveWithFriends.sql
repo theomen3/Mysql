@@ -16,7 +16,7 @@ CREATE TABLE `Interest`
 
   CONSTRAINT
     FOREIGN KEY InterestFK ('CustomerID')
-    REFERENCE Customer ('CustomerID');
+    REFERENCES Customer ('CustomerID');
 
 CREATE TABLE `Timeslots`
   CustomerID  INT(10),
@@ -27,4 +27,4 @@ CREATE TABLE `Timeslots`
 
   CONSTRAINT
     FOREIGN KEY TimeslotFK ('CustomerID')
-    REFERENCE Customer ('CustomerID');
+    REFERENCES Customer ('CustomerID');
