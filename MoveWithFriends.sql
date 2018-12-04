@@ -2,7 +2,7 @@ CREATE TABLE `Customer` (
   CustomerID    INT(10) NOT NULL PRIMARY KEY,
   FirstName     VARCHAR(255) NOT NULL,
   LastName      VARCHAR(255) NOT NULL,
-  Sex 		      VARCHAR(6) NOT NULL,
+  Sex           VARCHAR(6) NOT NULL,
   BirthDate     DATE,
   PreferredSex  VARCHAR(10) NOT NULL)
 ;
