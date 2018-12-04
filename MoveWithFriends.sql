@@ -1,31 +1,35 @@
-CREATE TABLE `Customer`
+CREATE TABLE `Customer` (
   CustomerID    INT(10) NOT NULL PRIMARY KEY,
   FirstName     VARCHAR(255) NOT NULL,
   LastName      VARCHAR(255) NOT NULL,
   SEX			      VARCHAR(6) NOT NULL,
   BirthDate     DATE,
-  PreferredSex  VARCHAR(10) NOT NULL;
+  PreferredSex  VARCHAR(10) NOT NULL)
+;
 
-CREATE TABLE `Interest`
+
+CREATE TABLE `Interest` (
   CustomerID  INT(10),
   Interest    VARCHAR(10),
 
   CONSTRAINT
-    PRIMARY KEY InterestPK ('CustomerID', 'Interest'),
+    PRIMARY KEY InterestPK (`CustomerID`, `Interest`),
 
   CONSTRAINT
-    FOREIGN KEY InterestFK ('CustomerID')
-    REFERENCES Customer ('CustomerID');
+    FOREIGN KEY InterestFK (`CustomerID`)
+    REFERENCES Customer (`CustomerID`))
+;
 
-CREATE TABLE `Timeslots`
+CREATE TABLE `Timeslots`  (
   CustomerID  INT(10),
   Timeslot   VARCHAR(20),
 
   CONSTRAINT
-    PRIMARY KEY TimeslotPK ('CustomerID', 'Timeslot'),
+    PRIMARY KEY TimeslotPK (`CustomerID`, `Timeslot`),
 
   CONSTRAINT
-    FOREIGN KEY TimeslotFK ('CustomerID')
-    REFERENCES Customer ('CustomerID');
+    FOREIGN KEY TimeslotFK (`CustomerID`)
+    REFERENCES Customer (`CustomerID`))
+ ;
 
-/* hoi meiden */
+
