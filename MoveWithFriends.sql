@@ -4,8 +4,7 @@ CREATE TABLE `Customer`
   LastName      VARCHAR(255) NOT NULL,
   SEX			      VARCHAR(6) NOT NULL,
   BirthDate     DATE,
-  PreferredSex  VARCHAR(10) NOT NULL
-;
+  PreferredSex  VARCHAR(10) NOT NULL;
 
 
 CREATE TABLE `Interest`
