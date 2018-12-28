@@ -1,44 +1,43 @@
 --Zo voeg je iets toe aan customer tabel
 
 INSERT INTO `customer` --(FirstName,LastName,SEX,BirthDate,PreferredSex) Voeg dit toe indien er geen ID nodig is
-VALUES ('Frans', 'Jadus', 'man', '1993-07-09', 'man');
-VALUES (2, 'Nick', 'Sluiters', 'man', '1993-07-19', 'vrouw');
+VALUES (1 'Frans', 'Jadus', '0648470015', 'male' 1993-07-09', 'man');
 
 INSERT INTO `customer`
-VALUES (3, 'Jurger', 'Papjes', 'man', '1980-08-12', 'vrouw');
+VALUES (2, 'Jurger', 'Papjes', '0612345678', 'man', '1980-08-12', 'vrouw');
+        
+INSERT INTO `customer`
+VALUES (3, 'Joost', 'Dinges', '0612545678', 'man', '1960-05-11', 'man');
 
 INSERT INTO `customer`
-VALUES (4, 'Joost', 'Dinges', 'man', '1960-05-11', 'man');
-
-INSERT INTO `customer`
-VALUES (5, 'Stijn', 'Ookiets', 'man', '1988-07-11', 'man');
+VALUES (4, 'Stijn', 'Ookiets', '0612545678', 'man', '1988-07-11', 'man');
 
 --Zo voeg je iets toe aan interest tabel
 
 INSERT INTO `interest`
-VALUES (2, 'fietsen');
+VALUES (1, 0, 0, 0, 0, 0, 0, 0);
 
 INSERT INTO `interest`
-VALUES (3, 'fietsen');
+VALUES (1, 0, 0, 0, 0, 0, 0, 0);
 
 INSERT INTO `interest`
-VALUES (4, 'wandelen');
+VALUES (0, 0, 1, 0, 0, 0, 0, 0);
 
 INSERT INTO `interest`
-VALUES (5, 'fietsen');
+VALUES (0, 0, 0, 0, 1, 0, 0, 0);
 
 --Zo voeg je iets toe aan timeslot tabel
 
 INSERT INTO `timeslot`
-VALUES (2, '12');
+VALUES (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 
 INSERT INTO `timeslot`
-VALUES (3, '13');
+VALUES (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 
 INSERT INTO `timeslot`
-VALUES (4, '13');
+VALUES (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
 
 INSERT INTO `timeslot`
-VALUES (5, '13');
+VALUES (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
 
 
