@@ -5,6 +5,8 @@ CREATE TABLE `Customer` (
   CustomerID      INT(10) NOT NULL PRIMARY KEY AUTO_INCREMENT,
   FirstName       VARCHAR(255) NOT NULL,
   LastName        VARCHAR(255) NOT NULL,
+  Email           VARCHAR(255) NOT NULL,
+  UserName        VARCHAR(255) NOT NULL,
   Phonenumber     VARCHAR(20) NOT NULL,
   Gender			    VARCHAR(6) NOT NULL,
   BirthDate       DATE NOT NULL,
