@@ -43,14 +43,14 @@ SELECT a.CustomerID, a.timeslot, a.interest, a.FirstName, b.FirstName FROM koppe
           OR a.zwemmen = b.zwemmen);
           
           
+DROP VIEW IF EXISTS `koppel`;
 CREATE VIEW koppel AS
 
 SELECT * from customer
 JOIN interest ON customer.CustomerID = interest.CustomerIDInterest
-JOIN timeslot ON customer.CustomerID = timeslot.CustomerIDtimeslot
+JOIN timeslot ON customer.CustomerID = timeslot.CustomerIDtimeslot;
 
-
-SELECT a.CustomerID, a.timeslot, a.interest, a.FirstName, b.FirstName FROM koppel a
+SELECT a.CustomerID, a.timeslot, a.boksen, a.FirstName, b.FirstName FROM koppel a
   JOIN koppel b
     ON a.customerID <> b.CustomerID
     AND (a.preferredgender = b.gender
@@ -58,6 +58,5 @@ SELECT a.CustomerID, a.timeslot, a.interest, a.FirstName, b.FirstName FROM koppe
     AND (b.preferredgender = a.gender
     OR b.preferredgender = 'beide')
     AND a.timeslot = b.timeslot
-    AND a.interest = b.interest 
+    AND a.boksen = b.boksen 
 ;
-
