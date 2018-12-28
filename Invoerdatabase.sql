@@ -1,14 +1,14 @@
 INSERT INTO `customer` 
-VALUES (1, 'Frans', 'Jadus', '0648470015', 'man',  '1993-07-09', 'man');
+VALUES (1, 'Frans', 'Jadus', '0648470015', 'Fransie@jaja.nl', 'Fransie', 'man',  '1993-07-09', 'man');
         
 INSERT INTO `customer`
-VALUES (2, 'Jurger', 'Papjes', '0612345678', 'man', '1980-08-12', 'man');
+VALUES (2, 'Jurger', 'Papjes', '0612345678', 'Jurger@neenee.nl', 'BurgerJurger', 'man', '1980-08-12', 'man');
         
 INSERT INTO `customer`
-VALUES (3, 'Joost', 'Dinges', '0612545678', 'man', '1960-05-11', 'man');
+VALUES (3, 'Joost', 'Dinges', '0612545678', 'Joostje@Whoepo.nl', 'Joostje', 'man', '1960-05-11', 'man');
         
 INSERT INTO `customer`
-VALUES (4, 'Stijn', 'Ookiets', '0612545678', 'man', '1988-07-11', 'man');
+VALUES (4, 'Stijn', 'Ookiets', '0612545678', 'Stijntjenijntje@Whiepie.nl', 'StijntjeNijntje', 'man', '1988-07-11', 'man');
         
 INSERT INTO `interest`
 VALUES (1, 1, 0, 0, 0, 0, 0, 0, 0);
