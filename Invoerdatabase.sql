@@ -2,7 +2,7 @@ INSERT INTO `customer`
 VALUES (1, 'Frans', 'Jadus', '0648470015', 'man',  '1993-07-09', 'man');
         
 INSERT INTO `customer`
-VALUES (2, 'Jurger', 'Papjes', '0612345678', 'man', '1980-08-12', 'vrouw');
+VALUES (2, 'Jurger', 'Papjes', '0612345678', 'man', '1980-08-12', 'man');
         
 INSERT INTO `customer`
 VALUES (3, 'Joost', 'Dinges', '0612545678', 'man', '1960-05-11', 'man');
