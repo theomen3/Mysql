@@ -8,10 +8,8 @@ CREATE TABLE `Customer` (
   Phonenumber     VARCHAR(20) NOT NULL,
   Gender			    VARCHAR(6) NOT NULL,
   BirthDate       DATE NOT NULL,
-  Preferredgender VARCHAR(10) NOT NULL),
+  Preferredgender VARCHAR(10) NOT NULL)
   
-  CONSTRAINT
-    PRIMARY KEY CustomerPK (CustomerID)
 ;
 
 
@@ -27,7 +25,7 @@ CREATE TABLE `Interest` (
   Zwemmen     BOOLEAN,
   
   CONSTRAINT
-    PRIMARY KEY InterestPK (CustomerID, Boksen)
+    PRIMARY KEY InterestPK (CustomerID, Boksen),
 
   CONSTRAINT
     FOREIGN KEY InterestFK (CustomerID)
@@ -65,9 +63,7 @@ CONSTRAINT
     FOREIGN KEY TimeslotFK (CustomerID)
     REFERENCES Customer (CustomerID))
 ;
-                         
-                         
-                         
+                                       
                          
 ----------------------------------------------------------------------------------------------------------------------------------
 
