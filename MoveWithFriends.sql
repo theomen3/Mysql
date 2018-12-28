@@ -28,7 +28,7 @@ CREATE TABLE `Interest` (
     PRIMARY KEY InterestPK (CustomerID, Boksen),
 
   CONSTRAINT
-    FOREIGN KEY InterestFK (CustomerID)
+    FOREIGN KEY InterestFK (CustomerIDinterest)
     REFERENCES Customer (CustomerID))
 ;
 
@@ -60,7 +60,7 @@ CONSTRAINT
     PRIMARY KEY TimeslotPK (CustomerID, Timeslot1),
 
   CONSTRAINT
-    FOREIGN KEY TimeslotFK (CustomerID)
+    FOREIGN KEY TimeslotFK (CustomerIDtimeslot)
     REFERENCES Customer (CustomerID))
 ;
                                        
