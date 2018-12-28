@@ -34,7 +34,7 @@ SELECT a.CustomerID, a.timeslot1, a.boksen, a.FirstName, b.FirstName FROM koppel
          OR a.timeslot19 = 1 AND b.timeslot19 = 1
          OR a.timeslot20 = 1 AND b.timeslot20 = 1
          OR a.timeslot21 = 1 AND b.timeslot21 = 1)
-     AND (a.boksen = b.boksen 
+     AND (a.boksen = 1 AND b.boksen = 1 
           OR a.fitness = 1 AND b.fitness = 1
           OR a.hardlopen = 1 AND b.hardlopen = 1
           OR a.tennis = 1 AND b.tennis = 1
