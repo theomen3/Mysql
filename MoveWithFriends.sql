@@ -8,16 +8,26 @@ CREATE TABLE `Customer` (
   Phonenumber     VARCHAR(20) NOT NULL,
   Gender			    VARCHAR(6) NOT NULL,
   BirthDate       DATE NOT NULL,
-  Preferredgender VARCHAR(10) NOT NULL)
+  Preferredgender VARCHAR(10) NOT NULL),
+  
+  CONSTRAINT
+    PRIMARY KEY CustomerPK (CustomerID)
 ;
 
 
 CREATE TABLE `Interest` (
   CustomerID  INT(10),
-  Interest    VARCHAR(10),
-
+  Boksen      BOOLEAN,
+  Fitness     BOOLEAN,
+  Hardlopen   BOOLEAN,
+  Tennis      BOOLEAN,
+  Squash      BOOLEAN,
+  Wandelen    BOOLEAN,
+  Wielrennen  BOOLEAN,
+  Zwemmen     BOOLEAN,
+  
   CONSTRAINT
-    PRIMARY KEY InterestPK (CustomerID, Interest),
+    PRIMARY KEY InterestPK (CustomerID, Boksen)
 
   CONSTRAINT
     FOREIGN KEY InterestFK (CustomerID)
@@ -25,11 +35,31 @@ CREATE TABLE `Interest` (
 ;
 
 CREATE TABLE `Timeslot`  (
-  CustomerID  INT(10),
-  Timeslot   VARCHAR(20),
-
-  CONSTRAINT
-    PRIMARY KEY TimeslotPK (CustomerID, Timeslot),
+  CustomerID    INT(10),
+  Timeslot1     BOOLEAN,
+  Timeslot2     BOOLEAN,
+  Timeslot3     BOOLEAN,
+  Timeslot4     BOOLEAN,
+  Timeslot5     BOOLEAN,
+  Timeslot6     BOOLEAN,
+  Timeslot7     BOOLEAN,
+  Timeslot8     BOOLEAN,
+  Timeslot9     BOOLEAN,
+  Timeslot10    BOOLEAN,
+  Timeslot11    BOOLEAN,
+  Timeslot12    BOOLEAN,
+  Timeslot13    BOOLEAN,
+  Timeslot14    BOOLEAN,
+  Timeslot15    BOOLEAN,
+  Timeslot16    BOOLEAN,
+  Timeslot17    BOOLEAN,
+  Timeslot18    BOOLEAN,
+  Timeslot19    BOOLEAN,
+  Timeslot20    BOOLEAN,
+  Timeslot21    BOOLEAN,
+  
+CONSTRAINT
+    PRIMARY KEY TimeslotPK (CustomerID, Timeslot1),
 
   CONSTRAINT
     FOREIGN KEY TimeslotFK (CustomerID)
