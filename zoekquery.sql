@@ -41,3 +41,23 @@ SELECT a.CustomerID, a.timeslot, a.interest, a.FirstName, b.FirstName FROM koppe
           OR a.wandelen = b.wandelen 
           OR a.wielrennen = b.wielrennen 
           OR a.zwemmen = b.zwemmen);
+          
+          
+CREATE VIEW koppel AS
+
+SELECT * from customer
+JOIN interest ON customer.CustomerID = interest.CustomerIDInterest
+JOIN timeslot ON customer.CustomerID = timeslot.CustomerIDtimeslot
+
+
+SELECT a.CustomerID, a.timeslot, a.interest, a.FirstName, b.FirstName FROM koppel a
+  JOIN koppel b
+    ON a.customerID <> b.CustomerID
+    AND (a.preferredgender = b.gender
+    OR a.preferredgender = 'beide')
+    AND (b.preferredgender = a.gender
+    OR b.preferredgender = 'beide')
+    AND a.timeslot = b.timeslot
+    AND a.interest = b.interest 
+;
+
