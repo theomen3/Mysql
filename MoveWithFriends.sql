@@ -25,7 +25,7 @@ CREATE TABLE `Interest` (
   Zwemmen     BOOLEAN,
   
   CONSTRAINT
-    PRIMARY KEY InterestPK (CustomerID, Boksen),
+    PRIMARY KEY InterestPK (CustomerIDinterest, Boksen),
 
   CONSTRAINT
     FOREIGN KEY InterestFK (CustomerIDinterest)
@@ -57,13 +57,14 @@ CREATE TABLE `Timeslot`  (
   Timeslot21    BOOLEAN,
   
 CONSTRAINT
-    PRIMARY KEY TimeslotPK (CustomerID, Timeslot1),
+    PRIMARY KEY TimeslotPK (CustomerIDtimeslot, Timeslot1),
 
   CONSTRAINT
     FOREIGN KEY TimeslotFK (CustomerIDtimeslot)
     REFERENCES Customer (CustomerID))
 ;
                                        
+                                                  
                          
 ----------------------------------------------------------------------------------------------------------------------------------
 
