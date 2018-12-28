@@ -2,12 +2,13 @@ DROP TABLE IF EXISTS `timeslot`, `Interest`, `customer`
 ;
 
 CREATE TABLE `Customer` (
-  CustomerID    INT(10) NOT NULL PRIMARY KEY AUTO_INCREMENT,
-  FirstName     VARCHAR(255) NOT NULL,
-  LastName      VARCHAR(255) NOT NULL,
-  SEX			      VARCHAR(6) NOT NULL,
-  BirthDate     DATE,
-  PreferredSex  VARCHAR(10) NOT NULL)
+  CustomerID      INT(10) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  FirstName       VARCHAR(255) NOT NULL,
+  LastName        VARCHAR(255) NOT NULL,
+  Phonenumber     VARCHAR(20) NOT NULL,
+  Gender			    VARCHAR(6) NOT NULL,
+  BirthDate       DATE NOT NULL,
+  Preferredgender VARCHAR(10) NOT NULL)
 ;
 
 
