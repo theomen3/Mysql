@@ -14,7 +14,7 @@ CREATE TABLE `Customer` (
 
 
 CREATE TABLE `Interest` (
-  CustomerID  INT(10),
+  CustomerIDinterest  INT(10),
   Boksen      BOOLEAN,
   Fitness     BOOLEAN,
   Hardlopen   BOOLEAN,
@@ -33,7 +33,7 @@ CREATE TABLE `Interest` (
 ;
 
 CREATE TABLE `Timeslot`  (
-  CustomerID    INT(10),
+  CustomerIDtimeslot   INT(10),
   Timeslot1     BOOLEAN,
   Timeslot2     BOOLEAN,
   Timeslot3     BOOLEAN,
