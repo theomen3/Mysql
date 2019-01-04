@@ -1,12 +1,13 @@
+
 DROP VIEW IF EXISTS `koppel`;
 CREATE VIEW koppel AS
 
-SELECT * from customer
-JOIN interest ON customer.CustomerID = interest.CustomerIDInterest
-JOIN timeslot ON customer.CustomerID = timeslot.CustomerIDtimeslot;
+SELECT * from users
+JOIN interest ON users.CustomerID = interest.CustomerIDInterest
+JOIN timeslot ON users.CustomerID = timeslot.CustomerIDtimeslot;
 
 
-SELECT a.CustomerID, a.timeslot1, a.timeslot2, a.timeslot3, a.timeslot4, a.timeslot5, a.timeslot6, a.timeslot7, a.timeslot8, a.timeslot9, a.timeslot10, a.timeslot11, a.timeslot12, a.timeslot13, a.timeslot14, a.timeslot15, a.timeslot16, a.timeslot17, a.timeslot18, a.timeslot19, a.timeslot20, a.timeslot21, a.boksen, a.fitness, a.Hardlopen, a.Tennis, a.Squash, a.Wandelen, a.Wielrennen, a.Zwemmen, a.FirstName, b.FirstName FROM koppel a
+SELECT a.CustomerID, a.FirstName, b.FirstName, a.timeslot1, a.timeslot2, a.timeslot3, a.timeslot4, a.timeslot5, a.timeslot6, a.timeslot7, a.timeslot8, a.timeslot9, a.timeslot10, a.timeslot11, a.timeslot12, a.timeslot13, a.timeslot14, a.timeslot15, a.timeslot16, a.timeslot17, a.timeslot18, a.timeslot19, a.timeslot20, a.timeslot21, a.boksen, a.fitness, a.Hardlopen, a.Tennis, a.Squash, a.Wandelen, a.Wielrennen, a.Zwemmen FROM koppel a
   JOIN koppel b
     ON a.customerID <> b.CustomerID
     AND (a.preferredgender = b.gender
@@ -42,7 +43,6 @@ SELECT a.CustomerID, a.timeslot1, a.timeslot2, a.timeslot3, a.timeslot4, a.times
           OR a.wandelen = 1 AND b.wandelen = 1
           OR a.wielrennen = 1 AND b.wielrennen = 1 
           OR a.zwemmen = 1 AND b.zwemmen = 1);
-      
       
       
 -------------------------------------------------------------------------------------------------------------------------      
