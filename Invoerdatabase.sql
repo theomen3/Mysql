@@ -1,13 +1,13 @@
-INSERT INTO `customer` 
+INSERT INTO `users` 
 VALUES (1, 'Frans', 'Jadus', '0648470015', 'Fransie@jaja.nl', 'Fransie', 'man',  '1993-07-09', 'man');
         
-INSERT INTO `customer`
+INSERT INTO `users`
 VALUES (2, 'Jurger', 'Papjes', '0612345678', 'Jurger@neenee.nl', 'BurgerJurger', 'man', '1980-08-12', 'man');
         
-INSERT INTO `customer`
+INSERT INTO `users`
 VALUES (3, 'Joost', 'Dinges', '0612545678', 'Joostje@Whoepo.nl', 'Joostje', 'man', '1960-05-11', 'man');
         
-INSERT INTO `customer`
+INSERT INTO `users`
 VALUES (4, 'Stijn', 'Ookiets', '0612545678', 'Stijntjenijntje@Whiepie.nl', 'StijntjeNijntje', 'man', '1988-07-11', 'man');
         
 INSERT INTO `interest`
