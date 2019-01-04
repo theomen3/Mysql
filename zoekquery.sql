@@ -2,8 +2,8 @@ DROP VIEW IF EXISTS `koppel`;
 CREATE VIEW koppel AS
 
 SELECT * from customer
-JOIN interest ON customer.CustomerID = interest.CustomerIDInterest
-JOIN timeslot ON customer.CustomerID = timeslot.CustomerIDtimeslot;
+JOIN interest ON users.CustomerID = interest.CustomerIDInterest
+JOIN timeslot ON users.CustomerID = timeslot.CustomerIDtimeslot;
 
 
 SELECT a.CustomerID, a.timeslot1, a.timeslot2, a.timeslot3, a.timeslot4, a.timeslot5, a.timeslot6, a.timeslot7, a.timeslot8, a.timeslot9, a.timeslot10, a.timeslot11, a.timeslot12, a.timeslot13, a.timeslot14, a.timeslot15, a.timeslot16, a.timeslot17, a.timeslot18, a.timeslot19, a.timeslot20, a.timeslot21, a.boksen, a.fitness, a.Hardlopen, a.Tennis, a.Squash, a.Wandelen, a.Wielrennen, a.Zwemmen, a.FirstName, b.FirstName FROM koppel a
@@ -51,8 +51,8 @@ DROP VIEW IF EXISTS `koppel`;
 CREATE VIEW koppel AS
 
 SELECT * from customer
-JOIN interest ON customer.CustomerID = interest.CustomerIDInterest
-JOIN timeslot ON customer.CustomerID = timeslot.CustomerIDtimeslot;
+JOIN interest ON users.CustomerID = interest.CustomerIDInterest
+JOIN timeslot ON users.CustomerID = timeslot.CustomerIDtimeslot;
 
 SELECT a.CustomerID, a.timeslot, a.boksen, a.FirstName, b.FirstName FROM koppel a
   JOIN koppel b
