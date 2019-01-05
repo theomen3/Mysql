@@ -1,7 +1,7 @@
 DROP VIEW IF EXISTS `koppel`;
 CREATE VIEW koppel AS
 
-SELECT * from customer
+SELECT * from users
 JOIN interest ON users.CustomerID = interest.CustomerIDInterest
 JOIN timeslot ON users.CustomerID = timeslot.CustomerIDtimeslot;
 
